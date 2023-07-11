@@ -58,7 +58,7 @@ export function Layout(props: LayoutProps) {
   // Navbar navigation
   const Navbar = () => {
     return (
-      <div className="bg-background sm:bg-clear shadow-md sm:shadow-none min-h-screen p-8 sm:pt-10 sm:px-6 md:pt-20 md:px-10 lg:px-20">
+      <div className="bg-background sm:bg-clear shadow-md sm:shadow-none min-h-screen p-8 ">
 
         <nav className="grid gap-y-3 place-items-center">
           {/* Logo */}
