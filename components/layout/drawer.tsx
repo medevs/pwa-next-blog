@@ -11,7 +11,7 @@ interface DrawerProps {
 export default function Drawer(props: DrawerProps) {
   return (
     <div className={cn(
-      "drawer sm:drawer-open",
+      "drawer sm:drawer-open overflow-auto",
     )}>
       <input id={props.id} type="checkbox" className="drawer-toggle" aria-label="Drawer Toggle" />
       <aside className="drawer-side">

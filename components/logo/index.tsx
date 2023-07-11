@@ -9,11 +9,11 @@ interface LogoProps extends NextLinkProps {
 
 export default function Logo(props: LogoProps) {
   return (
-    <Link aria-label="Primal Bound" href="/" className="mt-[-10px]">
+    <Link aria-label="Primal Bound" href="/">
       <motion.svg
         xmlns="http://www.w3.org/2000/svg"
         viewBox="0 0 800 600"
-        className="text-black dark:text-white h-[50px] md:h-[75px]"
+        className="text-black dark:text-white h-[50px] md:h-[52px] my-6"
       >
         <motion.g transform="translate(400, 300)">
           <motion.circle

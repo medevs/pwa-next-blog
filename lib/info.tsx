@@ -14,7 +14,9 @@ export const about = () => {
 export const bio = () => {
   return (
     <>
-      Join me as we delve into the depths of purpose, family, relationships, and well-being, uncovering the primal instincts that guide us. Through captivating articles, interactive discussions, and practical insights, Primal Bound seeks to inspire and ignite the fire within. Together, let's embrace our primal nature and create a community that fosters fulfillment, authenticity, and growth. Welcome to Primal Bound, where knowledge becomes a catalyst for change.
+      Join us as we delve into the depths of purpose, family, relationships, and well-being, uncovering the primal instincts that guide us.
+      <br />
+      Through captivating articles, interactive discussions, and practical insights, Primal Bound seeks to inspire and ignite the fire within. Together, let's embrace our primal nature and create a community that fosters fulfillment, authenticity, and growth. Welcome to Primal Bound, where knowledge becomes a catalyst for change.
     </>
   );
 };

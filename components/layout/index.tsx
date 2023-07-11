@@ -58,11 +58,10 @@ export function Layout(props: LayoutProps) {
   // Navbar navigation
   const Navbar = () => {
     return (
-      <div className="bg-background sm:bg-clear shadow-md sm:shadow-none min-h-screen p-8 ">
-
+      <div className="bg-background h-100 sm:p-4 md:p-6 lg:p-8">
+          <Logo href="/" className='flex items-center' />
         <nav className="grid gap-y-3 place-items-center">
           {/* Logo */}
-          <Logo href="/" className='flex items-center' />
           {
             Object.entries(props.items).map(([path, { name, icon, className }]) => {
               const isActive = path === pathname;
@@ -144,7 +143,7 @@ export function Layout(props: LayoutProps) {
 
       </header>
 
-      <main className="flex flex-col p-6 sm:p-10 md:pt-20 md:px-8 lg:px-20 min-h-screen">
+      <main className="flex flex-col p-4 mt-6 sm:p-6 md:pt-6 md:px-8 lg:px-10 min-h-screen">
         <Breadcrumbs />
         <div className="fixed bottom-8 right-8 sm:hidden z-50">
           <ScrollToTop />
