@@ -2,6 +2,9 @@ import '@/styles/index.css'
 
 import localFont from 'next/font/local';
 import { TopLoader, Providers } from '@/components';
+import { Analytics } from '@vercel/analytics/react';
+
+
 
 export { metadata } from './meta'
 
@@ -36,6 +39,7 @@ export default function RootLayout({
         />
 
         <Providers>{children}</Providers>
+        <Analytics />
       </body>
     </html>
   )
