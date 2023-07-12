@@ -38,15 +38,15 @@ export default function ArticleList({ items }: { items: Blog[] }) {
 
   return (
     <>
-      <section>
+      <section className='max-w-[702px]'>
         <h2 className="font-bold mb-4">Tags</h2>
         <div className="flex flex-wrap">
-          <div key='all' className="w-full sm:w-1/3 md:w-1/4 lg:w-1/5 xl:w-1/4">
-            <Tag onClick={() => handleTagChange(null)}>~All</Tag>
+          <div key='all' className="w-1/2 sm:w-1/3 md:w-1/5 lg:w-1/5 xl:w-1/6">
+            <Tag className='text-xs m-2' onClick={() => handleTagChange(null)}>~All</Tag>
           </div>
           {allTags.map((tag) =>
-            <div key={tag} className="w-full sm:w-1/3 md:w-1/4 lg:w-1/4 xl:w-1/4">
-              <Tag onClick={() => handleTagChange(tag)}>#{tag}</Tag>
+            <div key={tag} className="w-1/2 sm:w-1/3 md:w-1/5 lg:w-1/4 xl:w-1/6">
+              <Tag className='text-xs m-2' onClick={() => handleTagChange(tag)}>#{tag}</Tag>
             </div>
           )}
         </div>
