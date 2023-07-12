@@ -20,8 +20,8 @@
         --base: #e5e5e5; /* neutral-200 */
         --base-foreground: #525252; /* neutral-600 */
 
-        --primary: #158f7a; /* old: #2cffd1cb */
-        --primary-foreground: #2cffd1cb;
+        --primary: #FFA500; /* old: #FFA500 */
+        --primary-foreground: #FFA500;
 
         --destructive: #ff3b30;
         --destructive-foreground: ;
@@ -44,8 +44,8 @@
         --base: #262626; /* neutral-800 */
         --base-foreground: #a3a3a3; /* neutral-400 */
 
-        --primary: #2cffd1cb;
-        --primary-foreground: #2cffd1cb;
+        --primary: #FFA500;
+        --primary-foreground: #FFA500;
 
         --destructive: #ff453a;
         --destructive-foreground: ;
@@ -83,14 +83,14 @@
     }
 
     a:hover {
-        @apply text-[#158f7a] dark:text-primary decoration-dotted;
+        @apply text-[#FFA500] dark:text-primary decoration-dotted;
     }
 
     time {
         @apply text-neutral-500 transition-all;
     }
     a:hover time {
-        @apply text-[#158f7a] dark:text-primary;
+        @apply text-[#FFA500] dark:text-primary;
     }
 
     .prose .anchor {
@@ -108,7 +108,7 @@
     }
 
     .prose a {
-        @apply decoration-neutral-400 dark:decoration-neutral-600 hover:decoration-[#158f7a] hover:dark:decoration-[#2cffd1cb] hover:decoration-dotted underline-offset-2 decoration-[0.1em] scaleOnClick;
+        @apply decoration-neutral-400 dark:decoration-neutral-600 hover:decoration-[#FFA500] hover:dark:decoration-[#FFA500] hover:decoration-dotted underline-offset-2 decoration-[0.1em] scaleOnClick;
     }
 
     .prose .anchor:after {
