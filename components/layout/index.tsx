@@ -58,9 +58,11 @@ export function Layout(props: LayoutProps) {
   // Navbar navigation
   const Navbar = () => {
     return (
-      <div className="bg-background h-100 sm:p-4 md:p-6 lg:p-8">
-        <Logo href="/" className='flex items-center' />
-        <nav className="grid gap-y-3 place-items-center">
+      <div className="bg-background h-100 sm:p-4 md:p-6 lg:p-8 h-screen">
+        <div className="hidden sm:block">
+          <Logo href="/" className="" />
+        </div>
+        <nav className="grid gap-y-3 place-items-center px-2 py-4">
           {
             Object.entries(props.items).map(([path, { name, icon, className }]) => {
               const isActive = path === pathname;
@@ -125,18 +127,25 @@ export function Layout(props: LayoutProps) {
       id="landing-drawer"
       navbar={() => <Navbar />}
     >
-      <header className={cn(
-        "sm:hidden px-6 py-3 sticky top-0 backdrop-blur-md z-10",
+      <header
+      className={cn(
+        "sm:hidden flex px-6 py-3 sticky top-0 backdrop-blur-md z-10",
         !top && 'shadow-md',
-      )}>
+      )}
+    >
+      <div className="flex items-center flex-grow"> {/* Add a flex container to align items horizontally */}
+        {/* Logo - Positioned to the left */}
+        <Logo href="/" className="mr-auto" /> {/* Use 'mr-auto' to push the Logo to the left */}
+
+        {/* Label - Positioned to the right */}
         <Label
           htmlFor="landing-drawer"
-          className="relative left-[-12px] btn btn-square btn-ghost mask mask-squircle"
+          className="relative left-[-12px] ml-auto btn btn-square btn-ghost mask mask-squircle"
         >
           <Icon name="bars" width={32} height={32} />
         </Label>
-
-      </header>
+      </div>
+    </header>
 
       <main className="flex flex-col p-4 mt-6 md:pt-6 md:px-8 lg:px-10 min-h-screen">
         <Breadcrumbs />
