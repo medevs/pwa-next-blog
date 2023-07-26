@@ -61,7 +61,6 @@ export function Layout(props: LayoutProps) {
       <div className="bg-background h-100 sm:p-4 md:p-6 lg:p-8">
         <Logo href="/" className='flex items-center' />
         <nav className="grid gap-y-3 place-items-center">
-          {/* Logo */}
           {
             Object.entries(props.items).map(([path, { name, icon, className }]) => {
               const isActive = path === pathname;
@@ -117,10 +116,6 @@ export function Layout(props: LayoutProps) {
           <div className="flex my-10 w-[20px] h-[.5px] bg-border self-center" />
           <ThemeSwitch />
         </nav>
-
-        <div className="hidden absolute bottom-8 sm:bottom-10 md:bottom-20 sm:flex align-middle self-center">
-          <ScrollToTop />
-        </div>
       </div>
     )
   }
@@ -145,7 +140,7 @@ export function Layout(props: LayoutProps) {
 
       <main className="flex flex-col p-4 mt-6 md:pt-6 md:px-8 lg:px-10 min-h-screen">
         <Breadcrumbs />
-        <div className="fixed bottom-8 right-8 sm:hidden z-50">
+        <div className="fixed bottom-8 right-8 z-50">
           <ScrollToTop />
         </div>
         {props.children}
