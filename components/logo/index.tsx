@@ -18,8 +18,8 @@ export default function Logo(props: LogoProps) {
         <motion.g transform="translate(400, 300)">
           <motion.circle
             cx="0"
-            cy="0"
-            r="280"
+            cy="-30"
+            r="260"
             stroke="#FFA500"
             strokeWidth="10"
             fill="none"
@@ -28,34 +28,34 @@ export default function Logo(props: LogoProps) {
             transition={{ delay: 1 }}
           />
           <motion.text
-            x="0"
+            x="-110"
             y="0"
             fill="currentColor"
-            fontSize="400"
+            fontSize="360"
             fontWeight="bold"
-            fontFamily="Bungee, cursive"
+            // fontFamily="Bungee, cursive"
             textAnchor="middle"
             dominantBaseline="middle"
             initial={{ opacity: 0, x: -300 }}
             animate={{ opacity: 1, x: 0 }}
             transition={{ duration: 1 }}
           >
-            p
+            P
           </motion.text>
           <motion.text
-            x="0"
+            x="110"
             y="0"
             fill="currentColor"
-            fontSize="400"
+            fontSize="360"
             fontWeight="bold"
-            fontFamily="Bungee, cursive"
+            // fontFamily="Bungee, cursive"
             textAnchor="middle"
             dominantBaseline="middle"
             initial={{ opacity: 0, x: 300 }}
             animate={{ opacity: 1, x: 0 }}
             transition={{ duration: 1 }}
           >
-            b
+            B
           </motion.text>
         </motion.g>
       </motion.svg>
